@@ -1,0 +1,33 @@
+<html>
+<body>
+<h1>NUMBER OBJECTS</h1>
+<script>
+var x=15;
+var n=5.42689; 
+var y=new Number(15);
+var z=new Number(15);
+var s=x.toString()
+var e=x.toExponential(3)
+var f=n.toFixed(3)
+var  p=n.toPrecision(3)
+document.writeln("TYPE OF s:"+typeof s+"<br>")
+document.writeln("EXPONENTIAL FORM "+e+"<br>")
+document.writeln("toFixed function "+f+"<br>")
+document.writeln("toPrecision function "+p+"<br>")
+document.writeln("TYPE OF P:"+typeof p+"<br>")
+document.writeln("TYPE OF F:"+typeof f+"<br>")
+var a=Number(e)
+var b=parseInt(f)
+var c=parseFloat(f)
+document.writeln("TYPE OF A:"+typeof a+"<br>")
+document.writeln("TYPE OF B:"+typeof b+"<br>"+"VALUE OF B "+b+"<br>")
+document.writeln("TYPE OF B:"+typeof b+"<br>"+"VALUE OF C "+c+"<br>")
+document.writeln("<h1>NUMBER PROPERTIES</h1>");
+document.writeln("MIN_VALUE: "+Number.MIN_VALUE+ "<br>")
+document.writeln("MAX_VALUE: "+Number.MAX_VALUE+ "<br>")
+document.writeln("POSITVE INFINITY: "+Number.POSITIVE_INFINITY+ "<br>")
+document.writeln("NEGATIVE INFINITY: "+Number.NEGATIVE_INFINITY+ "<br>")
+document.writeln("NOT A NUMBER: "+Number.NaN+"<br>")
+</script>
+</body>
+</html>

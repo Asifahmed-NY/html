@@ -1,0 +1,42 @@
+<html>
+<body>
+<h1>STRINGS-STRING METHODS</h1>
+<script>
+    var s1="Welcome to Strings in Java Script";
+    document.writeln("DOUBLE QUOTED STRING: ",s1,"<br>");
+    var s2='String with single Quote with "DOUBLE QUOTATION"';
+    document.writeln("SINGLE QUOTED STRING: ",s2);
+    document.writeln(typeof s2);
+    var s3=new String("This is string object");
+    document.writeln("STRING OBJECT: ",s3,"<br>")
+    document.writeln(typeof s3,"<br>");
+    document.writeln("<h1>STRING METHODS</h1>");
+    document.writeln("s1= ",s1,"<br>","s2= ",s2,"<br>","s3= ",s3,"<br>");
+    document.writeln("indexOf()-Position of o in s1 ",s1.indexOf("o"),"<br>");
+    document.writeln("lastIndexOf()-Position of o in s1 ",s1.lastIndexOf("o"),"<br>");
+    document.writeln("indexOf() with one argument-Position of o in s1 ",s1.indexOf("z",6),"<br>");
+    document.writeln("search()- ",s1.search("o"),"<br>");
+    document.writeln("slice()-Extracting from s1 ",s1.slice(0,17),"<br>");
+    document.writeln("slice()-Extracting from s1 with Negative Index- ",s1.slice(0,-5),"<br>");
+    document.writeln("substring()-Extracting from s1 ",s1.substring(0,17),"<br>");
+    document.writeln("substr()-Extracting from s1 ",s1.substr(0,7),"<br>");
+    document.writeln("replace()-Replacing- ",s1.replace("Java Script",'"JS"'),"<br>");
+    var s4="welcome to java script"
+    var s5=s4.toUpperCase();
+    document.writeln(s5,"<br>");
+    document.writeln(s5.toLowerCase(),"<br>")
+    var s6="HELLO! ";
+    document.writeln(s6.concat(s4),"<br>");
+    var s7="   JAVA SCRIPT   ";
+    document.writeln("LENGTH OF S7 IS: ",s7.length,"<br>");
+    var s8=s7.trim();
+    document.writeln("LENGTH OF S8 IS: ",s8.length,"<br>");
+    document.writeln("charAT()- ",s1.charAt(8),"<br>");
+    document.writeln("charCodeAT()- ",s1.charCodeAt(8),"<br>");
+    for(i=0;i<s8.length;i++)
+    {
+        document.writeln(s8[i]+"<br>");
+    }
+</script>
+</body>
+</html>
